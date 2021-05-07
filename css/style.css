@@ -1,0 +1,196 @@
+ *{
+     margin:0px;
+     padding:0px;
+     font-family:sans-serif;
+ }
+ body{
+     overflow-x: hidden;
+ }
+ .navbar{
+    background-color: #314152 !important;
+}
+  /**side bar*/
+ #sidebar{
+     position:fixed;
+     width:200px;
+     height:100%;
+     background: #314152;
+     left:0px;
+     transition:all 500ms linear;
+     margin-top:60px;
+     
+  }
+ #sidebar.active{
+     left:-200px;
+     background: black;
+     
+ }
+ #sidebar ul li{
+        color:white;
+        list-style:none;
+        padding:15px 10px;
+        border-bottom:1px solid white;
+ }
+ #sidebar ul .dash-img{
+     width:40%;
+     height:30%;
+     margin:10px auto;
+     transform: translate(50px);
+   }
+  
+ .anc{
+     color: white !important;
+ }
+
+ #sidebar .toggle-btn{
+    position:absolute;
+    left:210px;
+    top:10px;
+ }
+ #sidebar .toggle-btn span{
+        display:block;
+        width:30px;
+        height:5px;
+        background: #314152;
+        margin:3px 0px;
+ }
+ /**charts*/
+ #myChart{
+     margin:120px 0px 0px 120px !important;
+    width:520px !important;
+ }
+  #pieChart
+  {
+      width:500px;
+      transform:translate(100px,140px)
+   }
+   #horizontalBar{
+       transform: translate(100px,70px);
+   }
+   #lineChart{
+       width:400px;
+       transform:translate(100px,30px)
+   }
+   #radarChart{
+    width:400px;
+    transform:translate(100px,30px)
+   }
+   /*tables*/
+   table{
+        transform:translate(500px,200px);
+        width:600px;
+        text-align: center;
+   }
+   table tr th{
+       background: #314152;
+       color:white
+   }
+   table tr td{
+    padding:20px;
+
+   }
+
+    
+   .btn-info{
+    transform:translate(1120px,190px);
+
+   }
+   .btn-danger{
+    transform:translate(1110px,190px);
+
+   }
+   #d{
+    transform:translate(800px,150px);
+
+   }
+   /*forms*/
+   form{
+    transform: translate(230px,120px)
+   }
+   #local-title{
+    transform: translate(230px,120px);
+    color:red;
+   }
+   #local{
+       width:400px;
+       height:200px;
+       border:1px solid black;
+    transform: translate(230px,120px);
+    text-align: center;
+
+   }
+   table.question-table{
+       position:absolute;
+       top:-50px;
+       left:510px;
+       border:2px solid #314152;
+       width:100px;
+       transform: translate(390px,170px);
+
+ 
+   }
+   /*Icon*/
+   .fa-trash-alt{
+       color:red;
+   }
+   .fa-trash-alt button{
+       border:none
+   }
+   form{
+    transform:translate(270px,100px);
+
+   }
+   .form-control{
+       width:400px !important;
+       border-radius: 30px !important;
+       border:1px solid #33b5e5
+   }
+   /**Answers*/
+   #answer1,#answer2,#answer3,#answer4{
+       margin:5px 0px;
+       display:none;
+       border:1px solid green !important;
+
+   }
+   #adquiz{
+       border-radius: 20px;
+       
+
+     }
+   .choose-ans{
+    margin:5px 0px 10px 0px ;
+    display:none;
+   }
+   table{
+       min-width:30%;
+       transform: translate(210px,170px);
+
+   }
+   #tbd{
+       border:2px solid #314152 !important;
+       
+   }
+   .store{
+    margin:10px 0px;
+    transform: translate(230px,120px);
+    width:80%;
+ 
+}
+   #tbd tr>td{
+    width:100% !important;
+    height:100% !important;
+   }
+   .table-content{
+       border:1px solid #33b5e5;
+   }
+   #mytable{
+       transform:translate(500px,200px)
+   }
+   #question{
+    border:2px solid #314152 !important;
+
+   }
+   .btn-dark{
+       background-color: #314152 !important;
+   }
+   

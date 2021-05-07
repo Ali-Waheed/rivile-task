@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Question Bank</title>
+     <link rel="icon" href="img/Capture.PNG" type="image/x-icon" />
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/mdb.min.css">
+     <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!--nav-->
+<!--Navbar -->
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark info-color fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Rivile Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+        aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i> Profile </a>
+            <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+            <a class="dropdown-item" href="#">My account</a>
+            <a class="dropdown-item" href="#">Log out</a>
+            </div>
+        </li>
+        </ul>
+    </div>
+    </nav>
+<!--/.Navbar -->
+    <!--nav-->
+
+    <!--sidebar-->
+      <div id="sidebar">
+        <div class="toggle-btn" onclick="toggleSidebar()">
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+        <ul>
+          <img src="img/Capture.PNG" alt="" class="dash-img">
+
+          <li><i class="fas fa-home"></i> <a href="index.html" class="anc">Home</a> </li>
+          <li> <i class="fas fa-question"></i><a href="#" class="anc"> Question Bank</a> </li>
+          <li><i class="fab fa-wpforms"></i><a href="Dynamic Forms.html" class="anc"> Dynamic Forms</a> </li>
+
+        </ul>
+      </div>
+          <!--sidebar-->
+
+
+ <!--insert Qestions and answers-->    
+ 
+            <form  autocomplete="off">    
+                  <label for="">Enter Question and Answers</label>  
+                  <br>
+                    <input type="text" id="question" class="form-control" placeholder="Please Enter Question Here" required>
+                          <input type="text" id="answer1" class="form-control" placeholder="Please Enter Answer1 Here" required>
+                          <input type="text" id="answer2" class="form-control" placeholder="Please Enter Answer2 Here" required>
+                          <input type="text" id="answer3" class="form-control" placeholder="Please Enter Answer3 Here" required>
+                          <input type="text" id="answer4" class="form-control" placeholder="Please Enter Answer4 Here" required>
+                          <br>
+                          <label for=""  class="choose-ans">Choose answer:</label>
+                            <label class="choose-ans">1</label> <input for="i1" type="radio" name="a" id="ans1" class="choose-ans" required>
+                            <label class="choose-ans">2</label> <input type="radio" name="a" id="ans2" class="choose-ans" required>
+                            <label class="choose-ans">3</label> <input type="radio" name="a" id="ans3" class="choose-ans" required>
+                            <label class="choose-ans">4</label> <input type="radio" name="a" id="ans4" class="choose-ans" required>
+                            <br><br>
+                            <input type="submit" class="btn btn-dark text-light" id="adquiz" value="add quiz"> 
+            </form> 
+             <!--insert Qestions and answers-->    
+
+
+                        <!--table for storing questions and answers-->
+                        <table border=1 class="store">
+                          <caption style="text-align: center;">Quiz Table for storing quiz data</caption>
+
+                                <tbody id="tbd">
+                                  <td>Qusetion</td>
+                                  <td>Answer1</td>
+                                  <td>Answer2</td>
+                                  <td>Answer3</td>
+                                  <td>Answer4</td>
+                                  <td>Correct Answer</td>
+
+                          </tbody>
+                        
+                    </table>
+                        <!--table for storing questions and answers-->
+
+              
+
+
+
+
+
+                        <!--table for deleting questions -->
+
+            <table border="1" class="question-table" id="tab">
+              <caption style="text-align: center;">Delete Questions</caption>
+                     <tbody id="tbd2">
+                          <tr>
+                              <td>
+                                Question 
+                              </td>
+
+                              <td>
+                                  Delete
+
+                              </td>
+                              
+                          </tr>
+                    </tbody>
+            </table>
+                                        <!--table for deleting questions -->
+
+
+    
+<!--Scripts-->
+ 
+     <script type="text/javascript" src="js/jquery.min.js"></script>
+     <script type="text/javascript" src="js/popper.min.js"></script>
+     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    
+         <script src="Rivile Js/Question.js"></script>
+
+   </body>
+
+</html>
